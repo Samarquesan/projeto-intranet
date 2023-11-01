@@ -1,4 +1,56 @@
+@charset "UTF-8";
+
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap');
+
+@media screen and (min-width: 480px) and (max-width: 768px){
+    body{
+        display: flex;
+        justify-content: center;
+        min-height: 100vh;
+        background: url('imagens/negative-space-abstract-shape-pattern-background-1.jpg') no-repeat;
+        background-size: cover;
+        background-position: right bottom;
+    }
+
+    .form-box{
+        width: 60vw;
+        height: 280px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 992px){
+    body{
+        display: flex;
+        justify-content: center;
+        min-height: 100vh;
+        background: url('imagens/negative-space-abstract-shape-pattern-background-1.jpg') no-repeat;
+        background-size: cover;
+        background-position: right bottom;
+    }
+
+    .form-box{
+        width: 60vw;
+        height: 280px;
+    }
+    
+}
+
+@media screen and (min-width: 992px) { /*Configuração de desktop*/
+    body{
+        display: flex;
+        justify-content: center;
+        min-height: 100vh;
+        background: url('imagens/negative-space-abstract-shape-pattern-background-1.jpg') no-repeat;
+        background-size: cover;
+        background-position: right bottom;
+    }
+    
+    .form-box{
+        width: 80vw;
+        height: 280px;
+    }
+
+    
+}
 
 *{
     margin: 0px;
@@ -155,6 +207,15 @@ header{
    z-index: 1;
 }
 
+.icon-close:hover{
+    background-color: rgb(200, 159, 239);
+}
+
+
+input{
+    padding: 10px;
+}
+
 .form-box h2{
     font-size: 2em;
     font-weight: bolder;
@@ -182,8 +243,13 @@ header{
    
 }
 
-.input-box label:{
+input:focus + label{
+    display: none;
+}
+
+.input-box label {
     display: block;
+    margin: 5px auto;
 }
 
 .input-box input{
@@ -193,7 +259,7 @@ header{
     border: none;
     outline: none;
     font-size: 1em;
-    color: black;
+    color: white;
     font-weight: bolder;
     padding: 0px 35px 0 5px;
 }
@@ -242,6 +308,10 @@ header{
     color: #fff;
     font-weight: bolder;
     font-size: 1.2em;
+}
+
+.btn:hover{
+    background-color: rgb(200, 159, 239);
 }
 
 .login-register{

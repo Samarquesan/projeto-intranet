@@ -18,27 +18,27 @@
         </nav>
     </header>
 
-    <div class="wrapper">
+    <div class="wrapper" id="IdMain">
         <span class="icon-close"><ion-icon name="close"></ion-icon></span>
 
         <div class="form-box login">
             <h2>Acesso</h2>
-            <form action="#" method="post">
+            <form action="#" method="post" id="IdAcesso">
                 <div class="input-box">
                     <span class="icon"><ion-icon name="mail"></ion-icon></span>
-                    <input type="email" name="" id="" required>
+                    <input type="email" name="" id="IdEmail" required>
                     <label for="">E-mail</label>
                 </div>
                 <div class="input-box">
                     <span class="icon"><ion-icon name="key"></ion-icon></span>
-                    <input type="password" name="" id="">
+                    <input type="password" name="" id="IdSenha" required>
                     <label for="">Senha</label>
                 </div>
                 <div class="remember-forgot">
                     <label for=""><input type="checkbox" name="" id="">Não consegue acessar?</label>
                     <a href="#">Esqueci minha senha</a>
                 </div>
-                <button type="submit" class="btn">Login</button>
+                <button type="submit" class="btn" onclick="logar(); return false">Login</button>
                 <div class="login-register">
                     <p>Não possui cadastro?<a href="#" class="register-link">Cadastrar-se</a></p>
                 </div>
@@ -49,18 +49,20 @@
             <h2>Cadastro</h2>
             <div class="input-box">
                 <span class="icon"><ion-icon name="people"></ion-icon></span>
-                <input type="text" name="" id="" required>
+                
+                <input type="text" name="" id="IdUsuario" required>
                 <label for="">Nome</label>
             </div>
-            <form action="#" method="post">
+            <form action="#" method="post" id="IdCadastro">
                 <div class="input-box">
                     <span class="icon"><ion-icon name="mail"></ion-icon></span>
-                    <input type="email" name="" id="" required>
+                    
+                    <input type="email" name="" id="IdEmail" required>
                     <label for="">E-mail</label>
                 </div>
                 <div class="input-box">
                     <span class="icon"><ion-icon name="key"></ion-icon></span>
-                    <input type="password" name="" id="">
+                    <input type="password" name="" id="IdSenha" required>
                     <label for="">Senha</label>
                 </div>
                 <div class="remember-forgot">
