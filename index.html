@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Intranet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h2 class="logo">Intranet</h2>
+        <nav class="navigation">
+            <a href="#">Cursos</a>
+            <a href="#">Fórum</a>
+            <a href="#">Serviços</a>
+            <a href="#">Suporte</a>
+            <button class="btnLogin-popup">Acessar</button>
+        </nav>
+    </header>
+
+    <div class="wrapper">
+        <span class="icon-close"><ion-icon name="close"></ion-icon></span>
+
+        <div class="form-box login">
+            <h2>Acesso</h2>
+            <form action="#" method="post">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" name="" id="" required>
+                    <label for="">E-mail</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="key"></ion-icon></span>
+                    <input type="password" name="" id="">
+                    <label for="">Senha</label>
+                </div>
+                <div class="remember-forgot">
+                    <label for=""><input type="checkbox" name="" id="">Não consegue acessar?</label>
+                    <a href="#">Esqueci minha senha</a>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <div class="login-register">
+                    <p>Não possui cadastro?<a href="#" class="register-link">Cadastrar-se</a></p>
+                </div>
+            </form>
+        </div>
+
+        <div class="form-box register">
+            <h2>Cadastro</h2>
+            <div class="input-box">
+                <span class="icon"><ion-icon name="people"></ion-icon></span>
+                <input type="text" name="" id="" required>
+                <label for="">Nome</label>
+            </div>
+            <form action="#" method="post">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" name="" id="" required>
+                    <label for="">E-mail</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="key"></ion-icon></span>
+                    <input type="password" name="" id="">
+                    <label for="">Senha</label>
+                </div>
+                <div class="remember-forgot">
+                    <label for=""><input type="checkbox" name="" id="">Concordo com os termos de responsabilidade</label>
+                    
+                </div>
+                <button type="submit" class="btn">Cadastrar</button>
+                <div class="login-register">
+                    <p>Já possui cadastro?<a href="#" class="login-link">Acesse aqui</a></p>
+                </div>
+            </form>
+        </div>
+
+    </div>
+    
+    <footer>
+
+    </footer>
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
